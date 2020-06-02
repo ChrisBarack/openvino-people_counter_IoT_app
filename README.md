@@ -9,3 +9,8 @@ People counting applications can be used in a retail store, supermarket, shoppin
 Prerequisites
 
 To run the application in this tutorial, the OpenVINO™ toolkit and its dependencies must already be installed and verified using the included demos. Installation instructions may be found at: https://software.intel.com/en-us/articles/OpenVINO-Install-Linux or https://github.com/udacity/nd131-openvino-fundamentals-project-starter/blob/master/linux-setup.md
+
+
+This is the model we will be using ssd_mobilenet_v2
+
+
