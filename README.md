@@ -14,3 +14,11 @@ To run the application in this tutorial, the OpenVINO™ toolkit and its depende
 This is the model we will be using ssd_mobilenet_v2
 
 
+BUILD 
+
+https://github.com/nullbyte91/openvino-people_counter_IoT_app
+
+
+use this everytie you want to run your code.
+
+source /opt/intel/openvino/bin/setupvars.sh -pyver 3.5
