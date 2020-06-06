@@ -49,3 +49,11 @@ tar -xvf ssd_mobilenet_v2_coco_2018_03_29.tar.gz
 python3 /opt/intel/openvino/deployment_tools/model_optimizer/mo_tf.py --input_model ssd_mobilenet_v2_coco_2018_03_29/frozen_inference_graph.pb --tensorflow_use_custom_operations_config  /opt/intel/openvino/deployment_tools/model_optimizer/extensions/front/tf/ssd_v2_support.json --tensorflow_object_detection_api_pipeline_config ssd_mobilenet_v2_coco_2018_03_29/pipeline.config
 
 
+This should now get your model ready and you can run it with the following command
+
+python3 main.py -m /frozen_inference_graph.xml -i resources/Pedestrian_Detect_2_1_1.mp4 -l /opt/intel/openvino/deployment_tools/inference_engine/lib/intel64/libcpu_extension_sse4.so
+
+start 4 terminal to run mosca server,your command,web pack and ffmpeg server 
+
+
+
