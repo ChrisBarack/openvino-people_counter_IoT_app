@@ -19,7 +19,7 @@ BUILD
 https://github.com/nullbyte91/openvino-people_counter_IoT_app
 
 
-use this everytie you want to run your code.
+use this  every time you want to run your code.
 
 source /opt/intel/openvino/bin/setupvars.sh -pyver 3.5
 
@@ -54,6 +54,14 @@ This should now get your model ready and you can run it with the following comma
 python3 main.py -m /frozen_inference_graph.xml -i resources/Pedestrian_Detect_2_1_1.mp4 -l /opt/intel/openvino/deployment_tools/inference_engine/lib/intel64/libcpu_extension_sse4.so
 
 start 4 terminal to run mosca server,your command,web pack and ffmpeg server 
+
+cd webservice/server/node-server
+node ./server.js
+
+cd webservice/ui
+npm run dev
+
+sudo ffserver -f ./ffmpeg/server.conf
 
 
 
